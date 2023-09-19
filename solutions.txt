@@ -19,14 +19,19 @@ SELECT * FROM products ORDER BY unit_price DESC LIMIT 5
 
 6.
 SELECT first_name, last_name, birth_date FROM employees WHERE birth_date<'01-01-1960'
+
 7.
 SELECT product_name, product_id FROM products WHERE units_in_stock=0
+
 8.
+SELECT AVG(unit_price) FROM products
+
 9.
+SELECT unit_price * quantity AS sum FROM order_details
+
 10.
+SELECT COUNT(category_id) AS num FROM categories
 11.
-12.
-13.
 14.
 15.
 16.
