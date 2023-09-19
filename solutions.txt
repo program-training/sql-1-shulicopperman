@@ -1,13 +1,26 @@
 את הפתרונות שלכם תכתבו כאן, אחרי כל שאלה, תעשו קומיט.
 
-1.SELECT category_id, product_name, product_id FROM products WHERE unit_price > 50
+1.
+SELECT category_id, product_name, product_id FROM products WHERE unit_price > 50
 
 2.
+SELECT * FROM customers
+WHERE country='Germany'
+
 3.
+SELECT * FROM orders
+WHERE customer_id='BLAUS'
+
 4.
+SELECT COUNT(order_id), AS TotalOrders FROM orders GROUP BY customer_id
+
 5.
+SELECT * FROM products ORDER BY unit_price DESC LIMIT 5
+
 6.
+SELECT first_name, last_name, birth_date FROM employees WHERE birth_date<'01-01-1960'
 7.
+SELECT product_name, product_id FROM products WHERE units_in_stock=0
 8.
 9.
 10.
